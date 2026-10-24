@@ -40,11 +40,7 @@ The padded model read the image shape (in the training set every Mouth image is 
 
 Large generated files (model weights, test probabilities and the image scan tables) are not included in the repository. The notebook recreates them.
 
-## How to run
-
-1. Create a Kaggle notebook and attach the competition data (it needs `train/`, `test/`, `train_labels.csv` and `sample_submission.csv`).
-2. Import `ENGE707_facial_feature_pipeline.ipynb`, turn on a GPU (T4) and internet access.
-3. In the first code cell set `DATA_DIR` to the folder that contains the data. Recommended settings: `IMG_SIZE = 160`, `FINAL_EPOCHS = 8`, `RUN_ABLATIONS = False`.
+Recommended settings: `IMG_SIZE = 160`, `FINAL_EPOCHS = 8`, `RUN_ABLATIONS = False`.
 4. Run all cells (about 40 minutes). The notebook writes `outputs/submission.csv`, `outputs/results.json` and `outputs/figures/`.
 
 All randomness uses seed 42, so repeated runs give identical results.
